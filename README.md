@@ -1,5 +1,5 @@
 # act-in-obs
-Capturing Advanced Combat Tracker in OBS
+### Capturing Advanced Combat Tracker in OBS
 
 Advanced Combat Tracker, or ACT, is used by many FFXIV players to track DPS. The thing is, it's notoriously difficult to capture in OBS. Window capture doesn’t work, and display capture isn’t optimal. After several hours of searching, I had found guides that showed how to capture ACT, but none of them showed how to capture ACT with a custom theme (such as Kagerou). So, I decided to make a guide myself. (FYI, I made this for a friend in 2018 but neglected to post it online until now.)
 
