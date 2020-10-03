@@ -14,10 +14,10 @@ You can see ACT in the lower right of the preview. Tutorial time!
 5. You should now have a tab titled “ACTWebSocket” in the Plugins folder in ACT. Click on it. You should be presented with a page which looks almost exactly like this: ![ACTWebSocket](https://i.imgur.com/pZAYSXU.png)
 
 6. Under “Host”, set “Host” to “Loopback (127.0.0.1)”. You can leave the port as-is.
-7. Go to your OverlayPlugin tab in ACT and copy the URL. Go back to the ACTWebSocket tab; under "Web Skins", click "Add URL" and paste the URL you just copied.
+7. Go to your OverlayPlugin tab in ACT and copy the URL. Go back to the ACTWebSocket tab; under "Web Skins", click "Add URL" and paste the URL you just copied. If that URL doesn't work, try [http://kagerou.hibiya.moe/overlay/](http://kagerou.hibiya.moe/overlay/) instead.
 8. Under “Server Status”, click “On”. If presented with any Windows Firewall alerts, just check the boxes for both public and private networks and click OK.
 9. Click on the entry you added under "Web Skins" and click "Open URL". Copy the URL in your address bar; this is what you'll be pointing OBS at.
-10. Open OBS and create a Browswer Source. Paste the URL into the URL field, and delete everything in the CSS field.
+10. Open OBS and create a Browswer Source. Paste the URL into the URL field, and delete everything in the CSS field. 
 11. Click OK. It should work now. I recommend using the width and height fields in the Browser Source properties to change the size of the overlay.
 
 ### Kagerou-specific additional steps:  
@@ -26,16 +26,23 @@ Kagerou has tons of settings to customize the look of the overlay, but it shows 
 
 1. Change the Browser Source URL to `http://kagerou.hibiya.moe/config/index.html`.
 2. Under the source list in OBS, right click the Browser Source and click "Interact". You'll be presented with a window in which you can interact with the page. Here, you can edit settings, including importing settings from your main overlay using the Import/Export menu. Ignore the message that says the overlay failed to reload.
-3. Change the Browser Source URL back to what you got from ACT. Your overlay should look exactly as you configured it.
+3. If you're importing settings and CTRL+V doesn't work for pasting the import string, try using CTRL+ALT+V. As of OBS 26.0.0 (on Windows), using CTRL+V to paste in OBS browser source doesn't work.
+4. Change the Browser Source URL back to what you got from ACT (or the Kagerou URL listed in step 7 of the above section). Your overlay should look exactly as you configured it.
 
 ## Other stuff
 
 I did the bulk of the work for this guide in 2018, though this version is revised slightly. Please let me know if there are any issues.
 
-If you have problems getting this working, check your firewall settings, make sure you're running ACT as admin, and make sure you unblocked the files for the websocket. If it's still not working, you can post an issue, though my troubleshooting ability is limited as I am not currently subbed to FFXIV (as of 2020.2.28).
+If you have problems getting this working, check your firewall settings, make sure you're running ACT as admin, and make sure you unblocked the files for the websocket. If it's still not working, you can post an issue, though my troubleshooting ability is limited as I am not currently subbed to FFXIV (as of 2020.10.3).
 
 You may share this guide and use it as a basis for video tutorials etc, though you must provide attribution. A link to this repo works fine.  
 This guide is licensed under Creative Commons Attribution 4.0 International; see LICENSE.txt for more info.
 
 #### Special thanks to:
 Amber and Blubs  
+
+## Changes
+
+### 2020.10.3
+
+Added extra info to steps 7 and 10.
